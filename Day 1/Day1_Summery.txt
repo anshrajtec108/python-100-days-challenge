@@ -1,0 +1,19 @@
+You learned:
+
+How to import a module
+
+How external libraries work
+
+Single-line and multi-line comments
+
+REPL testing
+
+🧠 Key Learnings Today
+
+✅ Python syntax basics
+✅ Data types & truthiness
+✅ Input / Output
+✅ Type conversion
+✅ External module usage
+✅ Clean formatting
+✅ Logical thinking improved
