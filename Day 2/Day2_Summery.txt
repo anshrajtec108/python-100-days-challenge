@@ -1,0 +1,103 @@
+AY 2 – Python Data Types (List, Tuple, Set, Dictionary)
+
+Summary + Important Methods + Examples
+
+🔵 1. LIST
+
+Mutable, ordered, allows duplicates.
+
+✔ Create
+nums = [1,2,3,4]
+
+✔ Important Operations
+nums.append(10)         # add
+nums.insert(1, 50)      # insert
+nums.remove(3)          # remove element
+nums.pop()              # remove last
+nums.sort()             # ascending
+nums.sort(reverse=True) # descending
+nums.reverse()          # reverse list
+nums.count(2)           # count value
+nums.index(4)           # index of value
+copy_list = nums.copy() # copy list
+
+✔ Slicing
+nums[1:4]
+nums[::-1]  # reverse
+
+✔ List Comprehension
+squares = [x*x for x in range(1,11)]
+
+✔ Nested List
+matrix = [[1,2],[3,4]]
+matrix[1][1]  # 4
+
+🟣 2. TUPLE
+
+Immutable, ordered, duplicates allowed.
+
+t = (10,20,30)
+t.count(20)
+t.index(30)
+
+✔ Conversion
+lst = list(t)
+t2 = tuple(lst)
+
+✔ Tuple Unpacking
+a,b,c = (1,2,3)
+
+🟢 3. SET
+
+Unordered, no duplicates, mutable.
+
+✔ Basic
+s = {10,20,30}
+s.add(40)
+s.discard(20)
+
+✔ Set Ops
+a | b   # union
+a & b   # intersection
+a - b   # difference
+a ^ b   # symmetric difference
+
+✔ Remove duplicates from list
+unique = set([1,1,2,3,3])
+
+🟡 4. DICTIONARY
+
+Key-value pairs. Mutable, fast lookup.
+
+✔ Create
+emp = {"name":"Ansh","age":20}
+
+✔ Access
+emp["name"]
+
+✔ Update / Add
+emp["city"] = "Mysore"
+emp.update({"age":21})
+
+✔ Remove
+emp.pop("age")
+emp.popitem()  # last key-value
+
+✔ Useful
+emp.keys()
+emp.values()
+emp.items()
+
+✔ Nested Dictionary
+emp = {"details":{"name":"Ansh","dept":"DS"}}
+
+🟠 Day 2 IMPORTANT INTERVIEW NOTES (SUPER SHORT)
+
+List = Mutable
+
+Tuple = Immutable
+
+Set = Unique values only
+
+Dictionary = Key-value store
+
