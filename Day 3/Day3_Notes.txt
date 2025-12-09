@@ -1,0 +1,94 @@
+✅ PYTHON FUNCTIONS – INTERVIEW REVISION NOTES
+🔥 1. def – Normal Function
+
+Reusable block of code
+
+Can return multiple values
+
+Supports positional + keyword arguments
+
+Used everywhere in Python
+
+🔥 2. *args – Variable Positional Arguments
+
+Takes multiple arguments as tuple
+
+Example: fun(1,2,3) → args = (1,2,3)
+
+Use when count of parameters is unknown
+
+🔥 3. **kwargs – Variable Keyword Arguments
+
+Takes multiple key=value pairs as dictionary
+
+Example: fun(name="Ansh", age=20)
+
+Used in configuration functions, ML models, APIs
+
+🔥 4. Default Arguments
+
+Assigns default value when not passed
+
+Example: def greet(name="Guest")
+
+🔥 5. Return Statement
+
+Ends function
+
+Returns single or multiple values as tuple
+
+🔥 6. Anonymous Functions – lambda
+
+Small one-line functions
+
+Syntax: lambda args: expression
+
+Used with map, filter, reduce
+
+Common in ML for sorting and quick logic
+
+🔥 7. map()
+
+Applies a function to each item
+
+Returns map object → convert to list
+
+Used for preprocessing, cleaning data
+
+🔥 8. filter()
+
+Filters items based on True/False condition
+
+Returns only items that satisfy condition
+
+Used in data cleaning & selection logic
+
+🔥 9. reduce()
+
+Combines all elements into one value
+
+Must import: from functools import reduce
+
+Used for cumulative sums, multiplications, aggregations
+
+✅ INTERVIEW KEY POINTS (VERY IMPORTANT)
+
+*args → tuple
+
+**kwargs → dictionary
+
+Lambda functions cannot have loops or multiple statements
+
+Map doesn’t change list size; filter can reduce list
+
+Reduce returns single output
+
+Use map/filter/reduce where loops are short and functional programming required
+
+Dictionary, list, tuple differences are commonly asked
+
+Functions are first-class objects → can be passed as arguments
+
+Python supports recursion
+
+Default arguments must come after non-default
