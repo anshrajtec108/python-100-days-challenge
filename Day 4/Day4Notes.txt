@@ -1,0 +1,80 @@
+⭐ 1. What is OOP?
+Object-Oriented Programming = A way to structure code using classes & objects.
+
+Class → Blueprint / template
+
+Object → Actual item created from the class
+
+Real-life example:
+
+Class → Car
+
+Objects → Toyota, BMW, Tesla
+
+A class defines what a car is.
+An object is the real car.
+
+⭐ 2. Class and Object (basic syntax)
+✅ Example:
+class Student:
+    pass
+
+s1 = Student()  # object
+s2 = Student()  # another object
+
+
+Nothing happens yet, just structure.
+
+⭐ 3. Constructor (__init__)
+
+Constructor runs automatically when object is created.
+
+Example:
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Ansh", 20)
+print(s1.name, s1.age)
+
+Output:
+Ansh 20
+
+⭐ 4. Understanding self
+
+Refers to current object.
+
+self.name means this object's name.
+
+If you write:
+
+s1 = Student("Ansh", 20)
+s2 = Student("Raj", 18)
+
+
+s1.name → "Ansh"
+s2.name → "Raj"
+self differentiates both.
+
+⭐ 5. Instance attributes vs Class attributes
+◼ Instance attribute
+
+Different for every object.
+
+class Student:
+    def __init__(self, name):
+        self.name = name   # instance attribute
+
+◼ Class attribute
+
+Same for all objects.
+
+class Student:
+    college = "ABC University"  # class attribute
+
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Ansh")
+print(s1.college)
