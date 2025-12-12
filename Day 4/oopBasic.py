@@ -28,7 +28,7 @@ s1=Student("Ansh",95)
 
 class Dog:
     species = "Mammal"
-    Name_Var=" "
+    name_Var=" "
     def __init__(self,name,age):
         Dog.name_var=name # storing in class variable
         self.name=name
@@ -40,8 +40,5 @@ d2 = Dog("Tommy", 5)
 
 D1.printFun()
 d2.printFun()
-# **4️⃣ Create a class Laptop where:
-# All laptops have brand = "Dell" (class attribute)
-# Each laptop has its own price (instance attribute)**
-# Create 3 objects with different prices.
+
 

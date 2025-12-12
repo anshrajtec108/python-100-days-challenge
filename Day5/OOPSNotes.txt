@@ -1,0 +1,137 @@
+# OOP METHODS CHEAT SHEET
+
+1. Instance Method (self)
+- Works on object data
+- Can access instance variables
+- Can access class variables
+Syntax:
+    def method(self): …
+
+2. Class Method (cls)
+- Works on class-level data
+- Modifies class variables
+- Cannot access object instance directly
+Syntax:
+    @classmethod
+    def method(cls): …
+
+3. Static Method
+- Utility/helper function inside class
+- Does not use self or cls
+- Related logically to class
+Syntax:
+    @staticmethod
+    def method(): …
+
+# When to use what?
+
+Use Instance Method when:
+- You want to access/update object attributes
+
+Use Class Method when:
+- You want to access/update class attributes
+- You need alternative constructors
+
+Use Static Method when:
+- You want a helper function inside class
+- You don’t need class or object data
+
+🎯 Top OOP Method Interview Questions (With Answers)
+1️⃣ What is the difference between instance, class, and static methods?
+
+Answer:
+
+Instance method → works with object data (uses self)
+
+Class method → works with class data (uses cls)
+
+Static method → behaves like a normal function inside class (no self, no cls)
+
+2️⃣ When do you use a class method?
+
+Answer:
+Use a class method when you need to:
+
+modify class-level variables
+
+create alternative constructors
+
+keep something related to class, not object
+
+Example:
+
+@classmethod
+def set_company(cls, name):
+    cls.company = name
+
+3️⃣ Why do static methods exist when we can create a normal function?
+
+Answer:
+Static methods keep the function logically inside the class,
+but do not need object or class data.
+
+Example: validating email, age, marks, etc.
+
+4️⃣ Can static methods access class or instance variables?
+
+Answer:
+No.
+Static methods cannot access:
+
+self
+
+cls
+
+They only use the parameters you pass.
+
+5️⃣ Can we call instance methods using the class name?
+
+Answer:
+Not directly.
+You must create an object first:
+
+obj = Student()
+Student.method(obj)
+
+6️⃣ Why do we use cls instead of class name inside class methods?
+
+Answer:
+Because:
+
+cls automatically refers to the class, even in inheritance
+
+using class name breaks polymorphism
+
+7️⃣ Why use class attribute instead of instance attribute?
+
+Answer:
+Use class attributes when the value is:
+
+same for all objects
+Examples: species, company_name, school_name
+
+8️⃣ Can we access class variables through objects?
+
+Answer:
+Yes, but modifying through object creates a new instance variable,
+it does NOT modify the class variable.
+
+9️⃣ What happens if instance and class variable have same name?
+
+Answer:
+
+Python always checks instance variable first
+
+If not found → checks class variable
+
+🔟 Why do we use @staticmethod in validation functions?
+
+Answer:
+Because validation does not require the object or class,
+but is still logically related to the class.
+
+Example:
+
+@staticmethod
+def validate_marks(m):
+    return 0 <= m <= 100
